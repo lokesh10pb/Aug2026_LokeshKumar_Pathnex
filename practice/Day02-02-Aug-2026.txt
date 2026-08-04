@@ -1,0 +1,187 @@
+treeDay 02 - Linux Commands Practice
+Date: 03-Aug-2026
+
+Today I learned and practised the following Linux commands:
+
+1. pwd
+   Shows the current working directory.
+
+2. ls
+   Lists files and directories.
+
+3. ls -la
+   Shows all files, including hidden files, with detailed information.
+
+4. cd
+   Changes the current directory.
+
+5. Absolute Path
+   A complete path that starts from the root directory (/).
+
+   Example:
+   cd /home/luckysingh/Documents
+
+6. Relative Path
+   A path based on the current working directory.
+
+   Example:
+   cd practice
+
+7. mkdir
+   Creates a new directory.
+
+   Example:
+   mkdir linux-practice
+
+8. touch
+   Creates an empty file.
+
+   Example:
+   touch test.txt
+
+9. cp
+   Copies files or directories.
+
+   Example:
+   cp test.txt backup.txt
+
+10. mv
+    Moves or renames files.
+
+    Example:
+    mv test.txt linux.txt
+
+11. rm
+    Removes a file.
+
+    Example:
+    rm linux.txt
+
+12. rm -r
+    Removes a directory and its contents.
+
+    Example:
+    rm -r linux-practice
+
+13. cat
+    Displays the contents of a file.
+
+    Example:
+    cat test.txt
+
+14. head
+    Displays the first 10 lines of a file.
+
+    Example:
+    head test.txt
+
+15. tail
+    Displays the last 10 lines of a file.
+
+    Example:
+    tail test.txt
+
+16. tail -f
+    Displays new lines added to a file in real time.
+
+    Example:
+    tail -f /var/log/syslog
+
+17. top
+    Displays running processes and system resource usage.
+
+18. ps
+    Displays currently running processes.
+
+    Example:
+    ps aux
+
+19. free -m
+    Displays memory usage in megabytes.
+
+20. df -h
+    Displays disk space usage in a human-readable format.
+
+21. du -sh
+    Displays the total size of a file or directory.
+
+    Example:
+    du -sh /var/log
+
+22. whoami
+    Displays the current logged-in username.
+
+23. uname -a
+    Displays operating system and kernel information.
+
+24. hostname
+    Displays the system hostname.
+
+25. ip addr
+    Displays network interfaces and IP addresses.
+
+26. ping
+    Checks network connectivity.
+
+    Example:
+    ping google.com
+
+27. systemctl
+    Manages Linux services.
+
+    Examples:
+    systemctl status ssh
+    sudo systemctl start ssh
+    sudo systemctl stop ssh
+    sudo systemctl restart ssh
+    sudo systemctl enable ssh
+
+28. journalctl
+    Displays system and service logs.
+
+    Example:
+    journalctl -u ssh
+
+29. chmod
+    Changes file permissions.
+
+    Example:
+    chmod +x script.sh
+
+30. chown
+    Changes file ownership.
+
+    Example:
+    sudo chown user:user test.txt
+
+31. grep
+    Searches for text inside files.
+
+    Example:
+    grep "error" application.log
+
+32. find
+    Searches for files and directories.
+
+    Example:
+    find /home -name "*.txt"
+
+33. history
+    Displays previously executed commands.
+
+34. clear
+    Clears the terminal screen.
+
+35. man
+    Opens the manual page of a command.
+
+    Example:
+    man systemctl
+
+Practice completed:
+- Checked CPU and running processes using top and ps.
+- Checked memory using free -m.
+- Checked disk usage using df -h and du -sh.
+- Practised absolute and relative paths.
+- Checked and managed services using systemctl.
+- Practised basic file and directory commands.
