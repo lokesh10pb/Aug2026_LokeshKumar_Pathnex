@@ -1,0 +1,39 @@
+# Daily Learning Report
+
+**Date:** 2 August 2026
+
+## Work Completed
+
+###
+
+Today, I learned the basics of Ansible and completed a practical setup.
+
+* Created three AWS EC2 instances.
+* Configured one EC2 instance as the **Ansible Master**.
+* Configured the other two instances as **Server 1** and **Server 2**.
+* Installed and set up Ansible on the master server.
+* Connected the master server to Server 1 and Server 2.
+* Created a simple Ansible playbook file.
+* Practised running the playbook on the managed servers.
+
+### 2. Linux Command Revision — 1 Hour
+
+* Revised important Linux commands.
+* Practised commands related to files, directories, users, permissions, and system management.
+
+### 3. Coding Practice — 30 Minutes
+
+* Practised coding concepts
+
+### 4. English-Speaking Practice — 1 Hour
+
+* Practised speaking English.
+* Focused on improving vocabulary, sentence formation, pronunciation, and confidence.
+
+## Total Recorded Time
+
+**2 hours and 30 minutes**, excluding the time spent learning and practising Ansible.
+
+## Today’s Achievement
+
+Today, I successfully created a basic Ansible environment using three AWS EC2 instances. I configured one instance as the Ansible master and two instances as managed servers. I also created and tested a simple playbook.
