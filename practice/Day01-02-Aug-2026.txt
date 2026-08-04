@@ -1,162 +1,21 @@
 Day 01 Coding Practice
-Date: 02-Aug-2026
+Date: 01-Aug-2026
+- name: Install Nginx on Pathnex server
+  hosts: all
+  become: yes
 
-Today I practiced some basic Linux commands.
+  tasks:
+    - name: Install nginx
+      yum:
+        name: nginx
+        state: present
 
-## Commands Practiced
+# Docker Installation & First Container
+docker --version
+docker run ubuntu echo "Hello Pathnex"
 
-### Check current directory
 
-```bash
-pwd
-```
-
-This command shows the current folder path.
-
-### Create a folder
-
-```bash
-mkdir test-folder
-```
-
-### Go inside the folder
-
-```bash
-cd test-folder
-```
-
-### Go back one folder
-
-```bash
-cd ..
-```
-
-### Create a file
-
-```bash
-touch example.txt
-```
-
-### Check files and folders
-
-```bash
-ls
-```
-
-For more details:
-
-```bash
-ls -l
-```
-
-### Check folder structure
-
-```bash
-tree
-```
-
-## Hard Link
-
-First, create a file:
-
-```bash
-echo "Hello Linux" > original.txt
-```
-
-Create a hard link:
-
-```bash
-ln original.txt hardlink.txt
-```
-
-Check inode number:
-
-```bash
-ls -li original.txt hardlink.txt
-```
-
-Both files show the same inode number.
-
-## Soft Link
-
-Create a soft link:
-
-```bash
-ln -s original.txt softlink.txt
-```
-
-Check it:
-
-```bash
-ls -l
-```
-
-The soft link points to the original file.
-
-## File Permissions
-
-Create a file:
-
-```bash
-touch test.txt
-```
-
-Check permission:
-
-```bash
-ls -l test.txt
-```
-
-Change permission:
-
-```bash
-chmod 644 test.txt
-```
-
-This gives:
-
-* Owner: read and write
-* Group: read
-* Others: read
-
-Another example:
-
-```bash
-chmod 755 test.txt
-```
-
-This gives:
-
-* Owner: read, write and execute
-* Group: read and execute
-* Others: read and execute
-
-## Permission Values
-
-```text
-r = 4
-w = 2
-x = 1
-```
-
-Examples:
-
-```text
-7 = read + write + execute
-6 = read + write
-5 = read + execute
-4 = read only
-```
-
-## What I Learned
-
-* `pwd` shows the current directory.
-* `mkdir` creates a folder.
-* `cd` changes the directory.
-* `cd ..` goes back one folder.
-* `touch` creates a file.
-* `ls` shows files and folders.
-* `ln` creates a hard link.
-* `ln -s` creates a soft link.
-* `chmod` changes file permissions.
+# Docker File
+FROM ubuntu:22.04
+CMD ["echo", "Hello Pathnex"
 
