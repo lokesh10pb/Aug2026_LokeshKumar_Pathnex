@@ -1,0 +1,60 @@
+----------------------------------------
+Day 02 - 03-Aug-2026
+----------------------------------------
+
+What I did today:
+
+- 1 hour - Learned basic Linux commands
+- 30 minutes - Practised absolute and relative paths
+- 30 minutes - Practised top, ps and process monitoring
+- 30 minutes - Checked memory using free -m
+- 30 minutes - Checked disk usage using df -h and du -sh
+- 45 minutes - Learned systemctl and Linux service management
+- 30 minutes - Practised file and directory commands
+- 30 minutes - Revised Linux commands
+
+Commands practised:
+
+pwd
+ls
+ls -la
+cd
+mkdir
+touch
+cp
+mv
+rm
+cat
+head
+tail
+top
+ps aux
+free -m
+df -h
+du -sh
+whoami
+uname -a
+hostname
+ip addr
+ping
+systemctl
+journalctl
+chmod
+chown
+grep
+find
+history
+clear
+man
+
+Tomorrow's tasks:
+
+- Revise Linux commands
+- Learn Linux file permissions
+- Learn users and groups
+- Practise grep, find and pipe commands
+- Practise service troubleshooting
+- Complete 30 minutes of coding practice
+- Complete 1 hour of English speaking practice
+
+----------------------------------------
