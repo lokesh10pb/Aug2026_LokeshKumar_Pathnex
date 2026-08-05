@@ -1,0 +1,79 @@
+- name : Install apache2 and start service
+  hosts: all
+  become: yes 
+
+  tasks:
+    - name: Install apache2 
+      yum:
+        name: httpd 
+        state: present
+
+    - name: Start apache2 service
+      service:
+        name: httpd
+        state: started
+        enabled: yes  
+
+
+# Terraform Ec2 creation
+
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_instance" "pathnex"{
+   ami = "ami-0c55b159cbfafe1f0"
+   instance_type = "t3.medium"
+   tags{
+    
+    Name = "pathnex"
+     
+   }
+}
+
+
+
+#creating kubernets deployment and service
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: pathnex-deployment
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: pathnex
+
+  template:
+    metadata:
+      labels:
+        app: pathnex
+
+    spec:
+      containers:
+        - name: pathnex-container
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+
+
+
+
+Shell Script
+
+#!/bin/bash
+echo "Hello user: $(whoami)"
+echo "Current user and group: $(groups)"
+
+
+#dockerfile
+FROM niginx:latest
+COPY index.html /usr/share/nginx/html/index.html  
+
+<h1>Welcome to Pathnex</h1>
+
+docker build -t pathnex-image .
+docker run -d -p 80:80 pathnex-image

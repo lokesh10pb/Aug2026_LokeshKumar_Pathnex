@@ -1,0 +1,26 @@
+3 August – Morning Session
+
+Linux  live class (3 Hours)
+
+Linux
+- Linux fundamentals revision
+
+Ansible Topics (3 Hours)
+- Remote host configuration
+- Configure inventory file
+- Install a web application on a remote server
+- File module
+- Copy module
+- Command module (run commands on remote server)
+- Shell module (run scripts on remote server)
+- Debug and troubleshoot Ansible errors
+- Practice the file, copy, command, and shell modules.
+
+Speaking Practice (30 Minutes)
+- Practice spoken English.
+- Explain the Ansible topics you studied.
+- Speak about Linux commands and your learning.
+
+Coding Practice (30 Minutes)
+
+Total Study Time: 7 Hours 10 Minutes
