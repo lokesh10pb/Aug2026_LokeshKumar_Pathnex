@@ -1,0 +1,104 @@
+pipeline {
+    agent any
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git 'https://github.com/pathnex/sample-repo.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Building project from Git repository'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running unit tests'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application'
+            }
+        }
+    }
+}
+
+
+
+#Git Lab 
+
+stages:
+ - build
+ - push 
+ - deploy
+
+ build:
+    stage: build
+    script: 
+       - docker build -t pathnex:latest . 
+    stage: deploy
+    script:
+      - : docker push pathnex
+
+
+# kubernetes deployment
+    - kubectl apply -f kubernetes/deployment.yaml
+
+# Ansible Create user on remote hosts
+
+---
+- name : Creating users
+  hosts: all 
+  become: yes
+
+  tasks:
+    - name: Create User'
+      user: 
+         name: pathnex
+         state: present
+    - name: Set permissions for the user
+      file:
+        path: /home/pathnex
+        owner: /pathnex
+        group: /pathnex
+        mode: 0755
+
+
+
+#Terraform file 
+
+resource "aws_instance" "my_ec2"{
+    ami = "ami=0abcd1234abcd1234"
+    instance_type = "t3.medium"
+
+    
+     tags  {
+        name = "pathnex"
+     }
+
+
+     ebs_block_device{
+        device_name = "dev/shd"
+        volume_size = 50
+     }
+}
+
+
+
+# Creating docker file 
+
+\print("Hello Pathnex")
+
+FROM python:3.11
+WORKDIR /opt/pathnex/python-app
+COPY app.py /opt/pathnex/python-app/
+CMD ["python", "/opt/pathnex/python-app/app.py"]
+
+# Real Path
+/opt/pathnex/python-app
+
+
+
+
+   
