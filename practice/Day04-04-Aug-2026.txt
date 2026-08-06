@@ -1,0 +1,94 @@
+Jenkinsfile — Basic CI Pipeline
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building project'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application'
+            }
+        }
+    }
+}
+
+
+
+stages:
+- build
+- test 
+- deploy 
+
+build:
+  stage:build 
+  script:
+    - echo "Building Project"
+
+test:
+   stage: test 
+   script:
+      - echo "Runing test"
+
+deploy:
+   stage: test
+   script: 
+      - echo "Deploy"    
+
+
+#Asible
+
+- name: Install and configure Nginx
+  hosts: all 
+  become: yes
+     tasks:
+     - name: nginx
+       yum:
+         name: nginx
+         stage: present
+    - name: Start nginx server 
+      service:
+         name: nginx
+         state: started
+         enabled: yes 
+
+
+ EC2 with Security Group
+
+
+ resource "aws_security_group" "example"{
+    name = "example_security_group"
+    description = "Allow SSH and HTTP"
+    ingress{
+        from_port. = 22
+        to_port = 22
+        protocol = "tcp"
+        cidr_blocks = ["0.0.0.0]
+    }
+
+    egress{
+        from_port = 0 
+        to_port = 0 
+        protocol = "-1"
+        cidr_blocks = ["0.0.0.0/0"]
+
+    }
+
+ }
+
+
+
+FROM ubuntu:22.04
+RUN apt update && apt install apache2 -y
+RUN echo "Hello Pathnex" > /var/www/html/index.html
+CMD ["apachectl", "-D", "FOREGROUND"]
+
+# Bash Real Path
+/var/www/html
