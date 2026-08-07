@@ -1,0 +1,34 @@
+5 August – Morning Session
+
+Morning Live Class (2.5 Hours)
+- Attend the live training session.
+- Take notes on the concepts covered.
+- Revise git  topics discussed during the class.
+
+Kubernetes (1.5 Hours)
+- Pods
+- Deployments
+- Services
+- High Availability (HA) concepts
+- Practice creating Kubernetes YAML files.
+
+Ansible Topics (1 Hour)
+- Create Ansible Playbooks.
+- Run scripts on host servers.
+- Add users.
+- Manage file and directory permissions.
+- Variables in Ansible.
+- Ad-hoc commands.
+
+Speaking Practice (30 Minutes)
+- Practice spoken English.
+- Explain the Kubernetes topics you studied.
+- Explain the Ansible topics you studied.
+- Speak about what you learned during the live class.
+
+Coding Practice (30 Minutes)
+- Create Kubernetes Pod, Deployment, and Service YAML files.
+- Write Ansible playbooks for user creation and script execution.
+- Practice Ansible ad-hoc commands.
+
+Total Study Time: 6 Hours
