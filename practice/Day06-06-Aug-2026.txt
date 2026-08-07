@@ -1,0 +1,81 @@
+# Ansinle for installing in docker on remote server 
+
+---
+- name: Install docker
+  hosts: all 
+  become: yes
+
+
+  tasks:
+    - name: installing docker
+      yum:
+         name: docker
+         state: present
+         enabled: yes
+    - name: starting docker
+      service:
+         name:docker
+         state: started
+         enabled: yes
+
+#Terraform vpc creation 
+
+resource " aws_vpc" "main"{
+    cidr_block = "10.0.0.0"
+}
+
+resource "aws_instance" "my_ec2"{
+    ami = "ami=0abcd1234abcd1234"
+    subnet_id = aws_subnet.main.id
+    tags{
+        Name = "pathnex-ec2"
+    
+    }
+}
+
+
+#Kubernetes pod
+
+apiVersion: v1
+kind: Pod
+metadata:
+   name: pathnex_pod
+spec:
+containers:
+  -name: pathnex-pod
+   image: nginx
+   volumeMounts:
+      - mountPath: /var/share/nginx/html
+        name: html-volume
+Volumes:
+  - name: html-volume
+    hostPath:
+       path: /data
+       type: Directory
+
+
+Shell script 
+
+services=("nginx" "docker" "httpd")
+
+for service in "${services[@]}"; do
+  if systemctl is-active --quiet "$service"; then
+    echo "$service is running"
+  else
+    echo "$service is not running"
+  fi
+done
+    
+
+
+#Docker file creation
+
+console.log("Hello Pathnex");
+
+FROM node:18
+WORKDIR /opt/pathnex/node-app
+COPY app.js /opt/pathnex/node-app/
+CMD ["node", "/opt/pathnex/node-app/app.js"]
+
+/opt/pathnex/node-app
+     

@@ -1,0 +1,40 @@
+6 August – Morning Session
+
+Morning Live Class (2.5 Hours)
+
+* Attend the live training session.
+* Take notes on the concepts covered.
+
+
+Kubernetes (1.5 Hours)
+
+* Pods
+* Deployments
+* Secret
+* ConfigMap
+* Practice creating Kubernetes YAML files.
+
+AWS Topics (1 Hour)
+
+* Introduction to AWS.
+* Learn about EC2 instances.
+* Understand IAM users and roles.
+* Learn about Security Groups.
+* Create and manage an S3 bucket.
+* Practice launching an EC2 instance.
+* Connect to an EC2 instance using SSH.
+
+Speaking Practice (30 Minutes)
+
+* Practice spoken English.
+* Explain the Kubernetes topics you studied.
+* Explain the AWS topics you studied.
+* Speak about what you learned during the live class.
+
+Coding Practice (30 Minutes)
+
+* Create Kubernetes Pod, Deployment, and Service YAML files.
+* Practice basic AWS CLI commands.
+* Practice connecting to an EC2 instance using SSH.
+
+Total Study Time: 6 Hours
