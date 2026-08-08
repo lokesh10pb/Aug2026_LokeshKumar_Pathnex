@@ -1,0 +1,66 @@
+7 August – Morning Session
+
+Morning Live Class (2.5 Hours)
+
+* Attend the live training session.
+* Take notes on the concepts covered.
+* Review important  aws points from the class.
+
+Ansible (1.5 Hours)
+
+* Understand Ansible Roles.
+* Learn the Ansible Role directory structure.
+* Create a Role using `ansible-galaxy init`.
+* Understand tasks inside Roles.
+* Learn Ansible Handlers.
+* Use `notify` to trigger Handlers.
+* Practice restarting services using Handlers.
+* Learn Ansible Variables.
+* Define variables inside Playbooks.
+* Use variables inside tasks.
+* Learn Ansible Loops.
+* Run the same task for multiple packages, users, or files using loops.
+* Learn how to create and manage Cron Jobs using Ansible.
+* Practice scheduling scripts and commands using the Ansible cron module.
+
+GitHub Actions Practice (1 Hour)
+
+* Review GitHub Actions workflow structure.
+* Understand workflow triggers such as `push` and `pull_request`.
+* Practice creating jobs and steps.
+* Use `actions/checkout` to checkout source code.
+* Practice installing application dependencies.
+* Run application build and test commands.
+* Practice creating a Docker image through GitHub Actions.
+* Understand GitHub Secrets.
+* Practice using secrets inside a workflow.
+* Review GitHub Actions OIDC authentication with AWS.
+* Practice the basic CI/CD flow:
+  Code Push → Build → Test → Docker Build → Deploy.
+
+Speaking Practice (30 Minutes)
+
+* Practice spoken English.
+* Explain what an Ansible Role is.
+* Explain why Roles are used.
+* Explain Ansible Handlers and `notify`.
+* Explain Ansible Variables.
+* Explain how Loops work in Ansible.
+* Explain how Cron Jobs can be managed using Ansible.
+* Explain the basic GitHub Actions CI/CD workflow.
+* Speak about what you learned during the live class.
+
+Coding Practice (30 Minutes)
+
+* Create an Ansible Role.
+* Create `tasks/main.yml`.
+* Create `handlers/main.yml`.
+* Add variables to the Ansible Role.
+* Create tasks using loops.
+* Create a Cron Job using Ansible.
+* Use `notify` to restart a service through a Handler.
+* Run and test the Ansible Playbook.
+* Create a basic GitHub Actions YAML workflow.
+* Practice a workflow for build and test.
+
+Total Study Time: 6 Hours
