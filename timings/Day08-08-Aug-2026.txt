@@ -1,0 +1,82 @@
+# 8 August – Morning Session
+
+## Morning AWS Live Class (2.5 Hours)
+
+* Attend the AWS live training session.
+* Take notes on the concepts covered during the class.
+* Review the important AWS topics explained by the trainer.
+* Revise key AWS services and concepts after the session.
+* Note down important interview points and practical AWS concepts.
+
+## Kubernetes Project Practice (1.5 Hours)
+
+* Deploy a small project/application in Kubernetes.
+* Understand the basic Kubernetes deployment process.
+* Create and review Kubernetes YAML files.
+* Understand Kubernetes Deployments.
+* Understand Kubernetes Services.
+* Create Pods through a Deployment.
+* Expose the application using a Kubernetes Service.
+* Check running Pods using `kubectl get pods`.
+* Check Deployments using `kubectl get deployments`.
+* Check Services using `kubectl get services`.
+* View application logs using `kubectl logs`.
+* Troubleshoot basic deployment issues.
+* Practice updating the application and redeploying it.
+* Understand the basic flow:
+
+  Application → Docker Image → Kubernetes Deployment → Pod → Service → Application Access
+
+## GitHub & GitHub Actions Practice (1 Hour)
+
+* Understand the basic concepts of GitHub.
+* Review repositories, branches, commits, and pull requests.
+* Understand how developers use GitHub for source-code management.
+* Practice pushing code to a GitHub repository.
+* Review GitHub Actions workflow structure.
+* Understand workflow triggers such as `push` and `pull_request`.
+* Understand jobs and steps in GitHub Actions.
+* Review the use of `actions/checkout`.
+* Understand how GitHub Actions can build and test an application.
+* Review how Docker images can be created using GitHub Actions.
+* Understand GitHub Secrets.
+* Review the basic CI/CD flow:
+
+  Code Push → GitHub → GitHub Actions → Build → Test → Docker Build → Deploy
+
+## Speaking Practice (30 Minutes)
+
+* Practice spoken English.
+* Explain what Kubernetes is.
+* Explain what a Kubernetes Deployment is.
+* Explain what a Pod is.
+* Explain what a Kubernetes Service is.
+* Explain how you deployed your small project in Kubernetes.
+* Explain the difference between Git and GitHub.
+* Explain what a GitHub repository is.
+* Explain branches, commits, and pull requests.
+* Explain the basic GitHub Actions CI/CD workflow.
+* Speak about what you learned during the AWS live class.
+* Explain what you practiced during the day in your own words.
+
+## Coding Practice (30 Minutes)
+
+* Practice Kubernetes Deployment YAML.
+* Create a Kubernetes Service YAML file.
+* Deploy the small application to Kubernetes.
+* Run `kubectl` commands to verify Pods, Deployments, and Services.
+* Check application logs.
+* Practice deleting and recreating Kubernetes resources.
+* Make a small change to the application and redeploy it.
+* Practice basic Git commands:
+
+  * `git status`
+  * `git add`
+  * `git commit`
+  * `git push`
+  * `git pull`
+* Push practice code to GitHub.
+* Create or review a basic GitHub Actions YAML workflow.
+* Practice a simple build and test workflow.
+
+## Total Study Time: 6 Hours
