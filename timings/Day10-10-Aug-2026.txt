@@ -1,0 +1,77 @@
+# 10 August – Morning Session
+
+## Morning AWS Live Class (2.5 Hours)
+
+* Attend the AWS live class.
+* Take proper notes during the session.
+* Revise the main topics covered by the trainer.
+* Go through important AWS services and concepts again.
+* Write down useful interview points and practical examples from the class.
+
+## Kubernetes RBAC Practice (1.5 Hours)
+
+* Learn the basics of Kubernetes RBAC.
+* Understand why RBAC is used in Kubernetes.
+* Learn about Roles, ClusterRoles, RoleBindings, and ClusterRoleBindings.
+* Understand how Service Accounts work in Kubernetes.
+* Create three Service Accounts:
+
+  * Admin Service Account
+  * Read-only Service Account
+  * Viewer Service Account
+* Give admin access to the Admin Service Account.
+* Give only read permissions to the Read-only Service Account.
+* Give the Viewer Service Account permission to view namespaces and required resources across the cluster.
+* Create Roles and ClusterRoles based on the required permissions.
+* Bind the Roles and ClusterRoles with the Service Accounts.
+* Understand the difference between namespace-level access and cluster-level access.
+* Create tokens for the Service Accounts.
+* Create kubeconfig files for the Service Accounts.
+* Test the kubeconfig files and check whether the users are getting the correct permissions.
+* Use `kubectl auth can-i` to verify access.
+* Practice fixing basic RBAC permission issues.
+
+Basic flow:
+
+Service Account → Role / ClusterRole → RoleBinding / ClusterRoleBinding → Kubernetes Resources
+
+## Speaking Practice (30 Minutes)
+
+* Practice spoken English for 30 minutes.
+* Explain Kubernetes RBAC in simple words.
+* Explain what a Service Account is.
+* Explain the difference between Role and ClusterRole.
+* Explain the difference between RoleBinding and ClusterRoleBinding.
+* Explain how admin, read-only, and viewer access works.
+* Explain what a kubeconfig file is.
+* Explain how you created kubeconfig files for the Service Accounts.
+* Explain how you checked permissions using `kubectl auth can-i`.
+* Speak about what you learned in the AWS live class.
+* Try to explain the full Kubernetes RBAC task in your own words.
+
+## Coding Practice (30 Minutes)
+
+* Create YAML files for the three Service Accounts.
+* Create Role and ClusterRole YAML files.
+* Create RoleBinding and ClusterRoleBinding YAML files.
+* Apply the files using `kubectl apply`.
+* Check the created Service Accounts.
+* Check Roles and ClusterRoles.
+* Check RoleBindings and ClusterRoleBindings.
+* Generate tokens for the Service Accounts.
+* Create kubeconfig files.
+* Test each kubeconfig file.
+* Check whether Admin has full access.
+* Check whether Read-only can only read resources.
+* Check whether Viewer can view the required namespaces and resources.
+* Practice commands like:
+
+  * `kubectl get serviceaccounts`
+  * `kubectl get roles`
+  * `kubectl get clusterroles`
+  * `kubectl get rolebindings`
+  * `kubectl get clusterrolebindings`
+  * `kubectl auth can-i`
+* Delete and recreate a few RBAC resources for practice.
+
+## Total Study Time: 5 Hours
