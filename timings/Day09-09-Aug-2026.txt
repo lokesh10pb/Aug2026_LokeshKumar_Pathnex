@@ -1,0 +1,700 @@
+# 9 August – Morning Session
+
+## Morning AWS Live Class + ALB Study (2.5 Hours)
+
+* Attend the AWS live training session.
+* Take notes on the concepts covered during the class.
+* Review the important AWS topics explained by the trainer.
+* Revise key AWS services and concepts after the session.
+
+### AWS Application Load Balancer (ALB)
+
+* Understand what an Application Load Balancer is.
+
+* Understand why ALB is used in AWS.
+
+* Understand how ALB distributes traffic between multiple servers.
+
+* Understand the basic ALB architecture.
+
+  User → ALB → Target Group → EC2 Instances
+
+* Understand listeners in ALB.
+
+* Understand listener rules.
+
+* Understand Target Groups.
+
+* Understand ALB health checks.
+
+* Understand healthy and unhealthy targets.
+
+* Understand how ALB works with EC2 instances.
+
+* Understand how ALB works with Auto Scaling Groups.
+
+* Understand HTTP and HTTPS listeners.
+
+* Understand ports 80 and 443.
+
+* Understand SSL/TLS certificate usage with ALB.
+
+* Understand path-based routing.
+
+* Understand host-based routing.
+
+* Understand Security Groups with ALB.
+
+* Understand public-facing and internal ALBs.
+
+* Review common ALB troubleshooting scenarios.
+
+* Understand common HTTP errors such as:
+
+  * 502 Bad Gateway
+  * 503 Service Unavailable
+  * 504 Gateway Timeout
+
+* Note important ALB interview questions and practical concepts.
+
+---
+
+## Kubernetes Mini Project + RBAC Practice (1.5 Hours)
+
+### Deploy Mini Application on Kubernetes
+
+* Deploy a small application in Kubernetes.
+* Review the application Docker image.
+* Create Kubernetes Deployment YAML.
+* Create Kubernetes Service YAML.
+* Deploy the application using `kubectl`.
+* Verify that the Deployment is running.
+* Verify that Pods are running.
+* Expose the application using a Kubernetes Service.
+* Access and test the deployed application.
+
+Understand the complete flow:
+
+Application → Docker Image → Deployment → ReplicaSet → Pod → Service → Application Access
+
+### Practice Important Kubernetes Commands
+
+* Practice:
+
+  `kubectl get pods`
+
+  `kubectl get pods -o wide`
+
+  `kubectl get deployments`
+
+  `kubectl get replicasets`
+
+  `kubectl get services`
+
+  `kubectl get nodes`
+
+  `kubectl get all`
+
+  `kubectl describe pod <pod-name>`
+
+  `kubectl describe deployment <deployment-name>`
+
+  `kubectl logs <pod-name>`
+
+  `kubectl logs -f <pod-name>`
+
+  `kubectl exec -it <pod-name> -- /bin/sh`
+
+  `kubectl apply -f deployment.yaml`
+
+  `kubectl apply -f service.yaml`
+
+  `kubectl delete -f deployment.yaml`
+
+  `kubectl delete pod <pod-name>`
+
+  `kubectl rollout status deployment/<deployment-name>`
+
+  `kubectl rollout history deployment/<deployment-name>`
+
+  `kubectl rollout undo deployment/<deployment-name>`
+
+* Practice troubleshooting Pods.
+
+* Check Pod events.
+
+* Check application logs.
+
+* Delete and recreate Kubernetes resources.
+
+* Update the application image and redeploy it.
+
+### Understand Kubernetes RBAC
+
+* Understand what RBAC means:
+
+  Role-Based Access Control
+
+* Understand why RBAC is required in Kubernetes.
+
+* Understand authentication vs authorization.
+
+* Understand Kubernetes users and ServiceAccounts.
+
+* Understand `Role`.
+
+* Understand `ClusterRole`.
+
+* Understand `RoleBinding`.
+
+* Understand `ClusterRoleBinding`.
+
+* Understand namespace-level permissions.
+
+* Understand cluster-level permissions.
+
+Understand the basic RBAC flow:
+
+User / ServiceAccount → RoleBinding → Role → Permissions
+
+and:
+
+User / ServiceAccount → ClusterRoleBinding → ClusterRole → Cluster Permissions
+
+* Understand RBAC permissions using:
+
+  * Resources
+  * Verbs
+  * API Groups
+
+* Understand common RBAC verbs:
+
+  * get
+  * list
+  * watch
+  * create
+  * update
+  * patch
+  * delete
+
+* Create a basic ServiceAccount.
+
+* Create a Role.
+
+* Create a RoleBinding.
+
+* Give permission to view Pods.
+
+* Verify permissions using:
+
+  `kubectl auth can-i get pods`
+
+* Understand common RBAC interview scenarios.
+
+---
+
+## GitHub & GitHub Actions Practice (1 Hour)
+
+* Understand the basic concepts of GitHub.
+* Review repositories, branches, commits, and pull requests.
+* Practice creating a new Git branch.
+* Make changes in the branch.
+* Commit the changes.
+* Push the branch to GitHub.
+* Create or review a Pull Request.
+* Understand the basic Git development workflow.
+
+### GitHub Actions
+
+* Review GitHub Actions workflow YAML.
+
+* Understand workflow triggers:
+
+  * `push`
+  * `pull_request`
+
+* Understand:
+
+  * workflows
+  * jobs
+  * steps
+  * runners
+
+* Review `actions/checkout`.
+
+* Understand how GitHub Actions checks out application code.
+
+* Practice a simple build workflow.
+
+* Practice a simple test workflow.
+
+* Review Docker image build using GitHub Actions.
+
+* Understand GitHub Secrets.
+
+* Understand how secrets are used securely inside workflows.
+
+Review the basic CI/CD flow:
+
+Code Change → Git Push → GitHub → GitHub Actions → Build → Test → Docker Build → Deploy
+
+---
+
+## Speaking Practice (30 Minutes)
+
+* Practice spoken English.
+
+Explain Kubernetes topics in your own words:
+
+* What is Kubernetes?
+* What is a Pod?
+* What is a Deployment?
+* What is a ReplicaSet?
+* What is a Kubernetes Service?
+* How did you deploy your mini application?
+* Which `kubectl` commands did you use?
+* How do you troubleshoot a failing Pod?
+* What is Kubernetes RBAC?
+* Why do we need RBAC?
+* What is a ServiceAccount?
+* What is the difference between Role and ClusterRole?
+* What is the difference between RoleBinding and ClusterRoleBinding?
+
+Explain AWS topics:
+
+* What is an Application Load Balancer?
+* Why do we use ALB?
+* What is a Target Group?
+* What is an ALB listener?
+* What is a health check?
+* What is path-based routing?
+* What is host-based routing?
+* How does ALB work with Auto Scaling?
+* What happens when one EC2 instance becomes unhealthy?
+* What can cause 502 or 504 errors?
+
+Explain GitHub topics:
+
+* What is Git?
+
+* What is GitHub?
+
+* What is a repository?
+
+* What is a branch?
+
+* What is a commit?
+
+* What is a Pull Request?
+
+* What is GitHub Actions?
+
+* Explain a basic CI/CD pipeline.
+
+* Finally, explain everything you practiced during the day in your own words.
+
+---
+
+## Coding Practice (30 Minutes)
+
+### Kubernetes
+
+* Create a Deployment YAML file.
+* Create a Service YAML file.
+* Deploy the mini application.
+* Verify Pods and Deployments.
+* Check application logs.
+* Practice `kubectl describe`.
+* Delete and recreate Pods.
+* Update the application image.
+* Practice rollout commands.
+
+### Kubernetes RBAC
+
+* Create a ServiceAccount YAML.
+* Create a Role YAML.
+* Create a RoleBinding YAML.
+* Apply the RBAC resources.
+* Verify the permissions using:
+
+  `kubectl auth can-i`
+
+### Git & GitHub
+
+Practice:
+
+* `git status`
+
+* `git branch`
+
+* `git checkout -b`
+
+* `git add`
+
+* `git commit`
+
+* `git push`
+
+* `git pull`
+
+* `git log`
+
+* Push Kubernetes practice files to GitHub.
+
+* Create or review a Pull Request.
+
+* Create or review a basic GitHub Actions YAML workflow.
+
+---
+
+# Total Study Time: 6 Hours
+# 9 August – Morning Session
+
+## Morning AWS Live Class + ALB Study (2.5 Hours)
+
+* Attend the AWS live training session.
+* Take notes on the concepts covered during the class.
+* Review the important AWS topics explained by the trainer.
+* Revise key AWS services and concepts after the session.
+
+### AWS Application Load Balancer (ALB)
+
+* Understand what an Application Load Balancer is.
+
+* Understand why ALB is used in AWS.
+
+* Understand how ALB distributes traffic between multiple servers.
+
+* Understand the basic ALB architecture.
+
+  User → ALB → Target Group → EC2 Instances
+
+* Understand listeners in ALB.
+
+* Understand listener rules.
+
+* Understand Target Groups.
+
+* Understand ALB health checks.
+
+* Understand healthy and unhealthy targets.
+
+* Understand how ALB works with EC2 instances.
+
+* Understand how ALB works with Auto Scaling Groups.
+
+* Understand HTTP and HTTPS listeners.
+
+* Understand ports 80 and 443.
+
+* Understand SSL/TLS certificate usage with ALB.
+
+* Understand path-based routing.
+
+* Understand host-based routing.
+
+* Understand Security Groups with ALB.
+
+* Understand public-facing and internal ALBs.
+
+* Review common ALB troubleshooting scenarios.
+
+* Understand common HTTP errors such as:
+
+  * 502 Bad Gateway
+  * 503 Service Unavailable
+  * 504 Gateway Timeout
+
+* Note important ALB interview questions and practical concepts.
+
+---
+
+## Kubernetes Mini Project + RBAC Practice (1.5 Hours)
+
+### Deploy Mini Application on Kubernetes
+
+* Deploy a small application in Kubernetes.
+* Review the application Docker image.
+* Create Kubernetes Deployment YAML.
+* Create Kubernetes Service YAML.
+* Deploy the application using `kubectl`.
+* Verify that the Deployment is running.
+* Verify that Pods are running.
+* Expose the application using a Kubernetes Service.
+* Access and test the deployed application.
+
+Understand the complete flow:
+
+Application → Docker Image → Deployment → ReplicaSet → Pod → Service → Application Access
+
+### Practice Important Kubernetes Commands
+
+* Practice:
+
+  `kubectl get pods`
+
+  `kubectl get pods -o wide`
+
+  `kubectl get deployments`
+
+  `kubectl get replicasets`
+
+  `kubectl get services`
+
+  `kubectl get nodes`
+
+  `kubectl get all`
+
+  `kubectl describe pod <pod-name>`
+
+  `kubectl describe deployment <deployment-name>`
+
+  `kubectl logs <pod-name>`
+
+  `kubectl logs -f <pod-name>`
+
+  `kubectl exec -it <pod-name> -- /bin/sh`
+
+  `kubectl apply -f deployment.yaml`
+
+  `kubectl apply -f service.yaml`
+
+  `kubectl delete -f deployment.yaml`
+
+  `kubectl delete pod <pod-name>`
+
+  `kubectl rollout status deployment/<deployment-name>`
+
+  `kubectl rollout history deployment/<deployment-name>`
+
+  `kubectl rollout undo deployment/<deployment-name>`
+
+* Practice troubleshooting Pods.
+
+* Check Pod events.
+
+* Check application logs.
+
+* Delete and recreate Kubernetes resources.
+
+* Update the application image and redeploy it.
+
+### Understand Kubernetes RBAC
+
+* Understand what RBAC means:
+
+  Role-Based Access Control
+
+* Understand why RBAC is required in Kubernetes.
+
+* Understand authentication vs authorization.
+
+* Understand Kubernetes users and ServiceAccounts.
+
+* Understand `Role`.
+
+* Understand `ClusterRole`.
+
+* Understand `RoleBinding`.
+
+* Understand `ClusterRoleBinding`.
+
+* Understand namespace-level permissions.
+
+* Understand cluster-level permissions.
+
+Understand the basic RBAC flow:
+
+User / ServiceAccount → RoleBinding → Role → Permissions
+
+and:
+
+User / ServiceAccount → ClusterRoleBinding → ClusterRole → Cluster Permissions
+
+* Understand RBAC permissions using:
+
+  * Resources
+  * Verbs
+  * API Groups
+
+* Understand common RBAC verbs:
+
+  * get
+  * list
+  * watch
+  * create
+  * update
+  * patch
+  * delete
+
+* Create a basic ServiceAccount.
+
+* Create a Role.
+
+* Create a RoleBinding.
+
+* Give permission to view Pods.
+
+* Verify permissions using:
+
+  `kubectl auth can-i get pods`
+
+* Understand common RBAC interview scenarios.
+
+---
+
+## GitHub & GitHub Actions Practice (1 Hour)
+
+* Understand the basic concepts of GitHub.
+* Review repositories, branches, commits, and pull requests.
+* Practice creating a new Git branch.
+* Make changes in the branch.
+* Commit the changes.
+* Push the branch to GitHub.
+* Create or review a Pull Request.
+* Understand the basic Git development workflow.
+
+### GitHub Actions
+
+* Review GitHub Actions workflow YAML.
+
+* Understand workflow triggers:
+
+  * `push`
+  * `pull_request`
+
+* Understand:
+
+  * workflows
+  * jobs
+  * steps
+  * runners
+
+* Review `actions/checkout`.
+
+* Understand how GitHub Actions checks out application code.
+
+* Practice a simple build workflow.
+
+* Practice a simple test workflow.
+
+* Review Docker image build using GitHub Actions.
+
+* Understand GitHub Secrets.
+
+* Understand how secrets are used securely inside workflows.
+
+Review the basic CI/CD flow:
+
+Code Change → Git Push → GitHub → GitHub Actions → Build → Test → Docker Build → Deploy
+
+---
+
+## Speaking Practice (30 Minutes)
+
+* Practice spoken English.
+
+Explain Kubernetes topics in your own words:
+
+* What is Kubernetes?
+* What is a Pod?
+* What is a Deployment?
+* What is a ReplicaSet?
+* What is a Kubernetes Service?
+* How did you deploy your mini application?
+* Which `kubectl` commands did you use?
+* How do you troubleshoot a failing Pod?
+* What is Kubernetes RBAC?
+* Why do we need RBAC?
+* What is a ServiceAccount?
+* What is the difference between Role and ClusterRole?
+* What is the difference between RoleBinding and ClusterRoleBinding?
+
+Explain AWS topics:
+
+* What is an Application Load Balancer?
+* Why do we use ALB?
+* What is a Target Group?
+* What is an ALB listener?
+* What is a health check?
+* What is path-based routing?
+* What is host-based routing?
+* How does ALB work with Auto Scaling?
+* What happens when one EC2 instance becomes unhealthy?
+* What can cause 502 or 504 errors?
+
+Explain GitHub topics:
+
+* What is Git?
+
+* What is GitHub?
+
+* What is a repository?
+
+* What is a branch?
+
+* What is a commit?
+
+* What is a Pull Request?
+
+* What is GitHub Actions?
+
+* Explain a basic CI/CD pipeline.
+
+* Finally, explain everything you practiced during the day in your own words.
+
+---
+
+## Coding Practice (30 Minutes)
+
+### Kubernetes
+
+* Create a Deployment YAML file.
+* Create a Service YAML file.
+* Deploy the mini application.
+* Verify Pods and Deployments.
+* Check application logs.
+* Practice `kubectl describe`.
+* Delete and recreate Pods.
+* Update the application image.
+* Practice rollout commands.
+
+### Kubernetes RBAC
+
+* Create a ServiceAccount YAML.
+* Create a Role YAML.
+* Create a RoleBinding YAML.
+* Apply the RBAC resources.
+* Verify the permissions using:
+
+  `kubectl auth can-i`
+
+### Git & GitHub
+
+Practice:
+
+* `git status`
+
+* `git branch`
+
+* `git checkout -b`
+
+* `git add`
+
+* `git commit`
+
+* `git push`
+
+* `git pull`
+
+* `git log`
+
+* Push Kubernetes practice files to GitHub.
+
+* Create or review a Pull Request.
+
+* Create or review a basic GitHub Actions YAML workflow.
+
+---
+
+# Total Study Time: 6 Hours
