@@ -1,0 +1,89 @@
+# 12 August – Study Update
+
+## Kubernetes Live Class (2.5 Hours)
+
+* Attended the Kubernetes live class.
+* Took proper notes during the session.
+* Revised the main topics covered by the trainer.
+* Went through important Kubernetes concepts again.
+* Noted useful interview points and practical examples from the class.
+
+## Kubernetes User Authentication & RBAC Practice (1.5 Hours)
+
+* Created a Kubernetes user.
+* Generated a private key for the user.
+* Created a Certificate Signing Request (CSR).
+* Submitted the CSR to Kubernetes.
+* Checked the CertificateSigningRequest.
+* Approved the certificate request.
+* Retrieved the signed user certificate.
+* Created a kubeconfig file for the user.
+* Added the cluster details to the kubeconfig.
+* Added the user certificate and private key.
+* Created and configured the user context.
+* Tested the user using the kubeconfig file.
+* Created a Role with the required permissions.
+* Created a RoleBinding.
+* Assigned the Role to the Kubernetes user.
+* Tested authentication and authorization.
+* Checked allowed and denied permissions.
+* Used `kubectl auth can-i` to verify access.
+* Practiced basic RBAC permission troubleshooting.
+
+Basic Flow:
+
+User → Private Key → CSR → Approve Certificate → Certificate → Kubeconfig → Role → RoleBinding → Kubernetes Resources
+
+## Speaking Practice (30 Minutes)
+
+* Practiced spoken English for 30 minutes.
+* Explained Kubernetes authentication in simple words.
+* Explained what a Kubernetes user is.
+* Explained how certificate-based authentication works.
+* Explained what a CSR is.
+* Explained how I created and approved the CSR.
+* Explained what a kubeconfig file is.
+* Explained how I created the kubeconfig for the user.
+* Explained what a Role is.
+* Explained what a RoleBinding is.
+* Explained how I assigned permissions to the user.
+* Explained how I checked permissions using `kubectl auth can-i`.
+* Spoke about what I learned in the Kubernetes live class.
+* Explained the complete authentication and authorization flow in my own words.
+
+## Coding / Hands-on Practice (30 Minutes)
+
+* Generated a private key for the Kubernetes user.
+* Created the CSR.
+* Created and applied the CertificateSigningRequest YAML.
+* Approved the CSR.
+* Retrieved the signed certificate.
+* Created the kubeconfig file.
+* Configured cluster, user credentials, and context.
+* Created the Role YAML file.
+* Created the RoleBinding YAML file.
+* Applied the Role and RoleBinding.
+* Tested the user with the kubeconfig.
+* Checked allowed and denied actions.
+* Practiced `kubectl get csr`.
+* Practiced `kubectl certificate approve`.
+* Practiced `kubectl config set-cluster`.
+* Practiced `kubectl config set-credentials`.
+* Practiced `kubectl config set-context`.
+* Practiced `kubectl auth can-i`.
+* Practiced checking Roles and RoleBindings.
+
+## Total Study Time: 5 Hours
+
+Main Focus:
+
+Kubernetes Live Class
+User Authentication
+Certificate and CSR
+Kubeconfig
+Role
+RoleBinding
+Authorization
+Speaking Practice
+
+Git practice was removed for today.
