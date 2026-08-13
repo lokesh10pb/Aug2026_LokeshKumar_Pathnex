@@ -1,0 +1,75 @@
+# 14 August – Day 14
+
+## AWS EKS Practical Session (3 Hours)
+
+* Attend the AWS EKS practical session.
+* Learn what Amazon EKS is and why it is used.
+* Understand how Kubernetes works with AWS EKS.
+* Learn the basic architecture of an EKS cluster.
+* Understand the role of the EKS Control Plane and Worker Nodes.
+* Learn how to create an EKS cluster step by step.
+* Understand the required IAM roles and permissions.
+* Learn how VPC, Subnets, and Security Groups are used with EKS.
+* Create an EKS cluster.
+* Create and configure the Node Group.
+* Connect to the EKS cluster using `kubectl`.
+* Update the kubeconfig for the EKS cluster.
+* Check the cluster nodes and verify the setup.
+* Deploy a basic application on the EKS cluster.
+* Take proper notes during the practical session.
+* Write down important commands, interview points, and practical steps.
+
+Basic flow:
+
+AWS Account → IAM → VPC / Subnets → EKS Cluster → Node Group → kubeconfig → kubectl → Deploy Application
+
+## EKS Practice and Concept Revision (3 Hours)
+
+* Practice creating an EKS cluster again.
+* Revise the complete EKS cluster creation process.
+* Understand each step instead of only following commands.
+* Revise IAM roles required for EKS.
+* Understand how the EKS Control Plane works.
+* Understand how Worker Nodes join the EKS cluster.
+* Revise VPC, Subnets, Security Groups, and networking concepts.
+* Practice creating and configuring a Node Group.
+* Practice updating kubeconfig.
+* Connect to the cluster using `kubectl`.
+* Check nodes, pods, deployments, and services.
+* Deploy a sample application.
+* Practice exposing the application using a Service.
+* Understand how Kubernetes resources run inside EKS.
+* Delete and recreate some resources for practice.
+* Go through common EKS errors and understand how to troubleshoot them.
+* Revise important EKS interview questions.
+
+Useful commands to practice:
+
+* `aws eks update-kubeconfig`
+* `kubectl get nodes`
+* `kubectl get pods`
+* `kubectl get deployments`
+* `kubectl get services`
+* `kubectl describe node`
+* `kubectl describe pod`
+* `kubectl apply -f`
+* `kubectl delete -f`
+
+## Speaking Practice (30 Minutes)
+
+* Practice spoken English for 30 minutes.
+* Explain what Amazon EKS is in simple words.
+* Explain why companies use EKS.
+* Explain the basic architecture of an EKS cluster.
+* Explain the difference between the EKS Control Plane and Worker Nodes.
+* Explain what a Node Group is.
+* Explain why IAM roles are required in EKS.
+* Explain how VPC and Subnets are used in EKS.
+* Explain what kubeconfig is.
+* Explain how you connected `kubectl` to the EKS cluster.
+* Explain how you created the EKS cluster step by step.
+* Explain how you deployed an application on EKS.
+* Speak about the problems you faced during the practical session and how you solved them.
+* Try to explain the complete EKS practical task in your own words without looking at notes.
+
+## Total Study Time: 6 Hours 30 Minutes
