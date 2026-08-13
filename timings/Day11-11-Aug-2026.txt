@@ -1,0 +1,64 @@
+11 August – Study Update
+
+Kubernetes Live Class (3 Hours)
+
+- Attended the Kubernetes live class for 3 hours.
+- Took proper notes during the session.
+- Revised the main topics covered by the trainer.
+- Went through important Kubernetes concepts again.
+- Noted useful interview points and practical examples from the class.
+- Practiced the concepts explained during the live session.
+
+AWS Load Balancer Concepts (1.5 Hours)
+
+- Learned the basic concept of AWS Load Balancing.
+- Understood why a Load Balancer is used.
+- Learned how a Load Balancer distributes incoming traffic across multiple servers.
+- Understood how Load Balancers improve application availability.
+- Learned about AWS Elastic Load Balancing (ELB).
+- Learned about Application Load Balancer (ALB).
+- Learned about Network Load Balancer (NLB).
+- Understood the difference between ALB and NLB.
+- Learned about Listeners and Listener Rules.
+- Understood the concept of Target Groups.
+- Learned how EC2 instances are registered with a Target Group.
+- Understood how Load Balancer health checks work.
+- Learned how traffic is forwarded only to healthy instances.
+- Understood the concept of high availability.
+- Learned how a Load Balancer works across multiple Availability Zones.
+- Revised important AWS Load Balancer interview concepts.
+
+Basic Flow:
+
+User Request → Load Balancer → Listener → Target Group → Healthy EC2 Instances
+
+Speaking Practice (30 Minutes)
+
+- Practiced spoken English for 30 minutes.
+- Explained Kubernetes concepts learned in the live class.
+- Explained what a Load Balancer is.
+- Explained why we use a Load Balancer.
+- Explained how a Load Balancer distributes traffic.
+- Explained what an Application Load Balancer is.
+- Explained what a Network Load Balancer is.
+- Explained the difference between ALB and NLB.
+- Explained what a Target Group is.
+- Explained what a Listener is.
+- Explained how health checks work.
+- Explained what happens when an EC2 instance becomes unhealthy.
+- Explained how Load Balancers provide high availability.
+- Tried to explain the complete AWS Load Balancer flow in my own words.
+
+Total Study Time: 5 Hours
+
+Main Focus:
+
+Kubernetes Live Class
+AWS Load Balancer
+Application Load Balancer
+Network Load Balancer
+Listeners
+Target Groups
+Health Checks
+High Availability
+Speaking Practice
