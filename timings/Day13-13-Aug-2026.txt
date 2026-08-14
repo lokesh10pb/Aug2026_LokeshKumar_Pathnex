@@ -1,0 +1,47 @@
+# 13 August – Day 13
+
+## Morning AWS Live Class (3 Hours)
+
+* Attend the morning AWS live class.
+* Learn about Kubernetes Architecture.
+* Understand Control Plane and Worker Node components.
+* Learn about API Server, etcd, Scheduler, and Controller Manager.
+* Understand kubelet and kube-proxy.
+* Learn how Pods and containers run inside the cluster.
+* Understand how Kubernetes components communicate with each other.
+* Take proper notes during the class.
+* Write down important interview points and practical examples.
+
+Basic flow:
+
+User / kubectl → API Server → Scheduler / Controller Manager → Worker Node → kubelet → Pod → Container
+
+## Kubernetes Architecture Revision (2 Hours)
+
+* Revise the Kubernetes architecture topic covered in the class.
+* Go through Control Plane components again.
+* Revise Worker Node components.
+* Understand the role of API Server, etcd, Scheduler, and Controller Manager.
+* Revise kubelet and kube-proxy.
+* Understand the complete Pod creation flow.
+* Draw the Kubernetes architecture diagram for practice.
+* Practice explaining the architecture without looking at notes.
+* Revise important interview questions related to Kubernetes architecture.
+
+## Speaking Practice (30 Minutes)
+
+* Practice spoken English for 30 minutes.
+* Explain Kubernetes architecture in simple words.
+* Explain what the Control Plane is.
+* Explain what a Worker Node is.
+* Explain the role of API Server.
+* Explain what etcd does.
+* Explain how the Scheduler works.
+* Explain what Controller Manager does.
+* Explain kubelet and kube-proxy.
+* Explain what a Pod is.
+* Explain the complete flow of running a Pod.
+* Speak about what you learned in the AWS live class.
+* Try to explain the complete Kubernetes architecture in your own words.
+
+## Total Study Time: 5 Hours 30 Minutes
