@@ -1,0 +1,77 @@
+15 August - Day 15
+
+AWS EKS Practical Session - 3 Hours
+
+Attended the AWS EKS practical session.
+Revised the EKS cluster architecture.
+Practiced how to create an EKS cluster.
+Revised IAM roles required for EKS.
+Revised VPC, subnet and security group concepts.
+Created an EKS cluster.
+Created and added a Node Group to the EKS cluster.
+Checked the worker nodes and verified that they joined the cluster.
+Learned how the EKS control plane and worker nodes communicate.
+Practiced connecting to the EKS cluster using kubectl.
+Updated kubeconfig for the EKS cluster.
+Ran basic kubectl commands and checked the cluster resources.
+Revised the concepts that I studied on Day 14.
+
+Basic flow:
+
+AWS Account -> IAM -> VPC/Subnets -> EKS Cluster -> Node Group -> kubeconfig -> kubectl
+
+EKS Hands-On Practice - 2 Hours
+
+Practiced creating an EKS cluster by myself.
+Added a managed Node Group.
+Verified the nodes using kubectl.
+Created a Jump Server for accessing the EKS environment.
+Connected to the Jump Server using SSH.
+Configured AWS CLI on the Jump Server.
+Configured kubectl on the Jump Server.
+Updated kubeconfig and connected to the EKS cluster.
+
+Practiced commands like:
+
+kubectl get nodes
+kubectl get pods
+kubectl get pods -A
+kubectl get deployments
+kubectl get services
+kubectl describe node
+kubectl describe pod
+
+Practiced checking and troubleshooting cluster resources.
+Learned about the Amazon EBS CSI Driver.
+Added/configured the EBS CSI Driver in the EKS cluster.
+Understood why the CSI Driver is required for EBS storage.
+
+Learned the basic storage flow:
+
+StorageClass -> PVC -> PV -> EBS Volume
+
+Checked the CSI Driver pods and verified that they were running.
+Revised the complete flow from creating the cluster to accessing it from the Jump Server.
+
+Hands-on flow:
+
+Create EKS Cluster -> Add Node Group -> Create Jump Server -> SSH to Jump Server -> Configure AWS CLI/kubectl -> Update kubeconfig -> Run kubectl commands -> Add EBS CSI Driver
+
+Speaking Practice - 30 Minutes
+
+Practiced spoken English for 30 minutes.
+Explained Amazon EKS in my own words.
+Explained the EKS control plane and worker nodes.
+Explained what a Node Group is.
+Explained how worker nodes join the cluster.
+Explained the use of IAM roles in EKS.
+Explained VPC, subnets and security groups.
+Explained what a Jump Server is and why we use it.
+Explained how I connected to EKS through the Jump Server.
+Explained what kubeconfig is.
+Explained the commands I used while working with EKS.
+Explained what the EBS CSI Driver is.
+Explained how EBS storage works with Kubernetes.
+Tried to explain the complete EKS setup without looking at notes.
+
+Total Study Time: 5 Hours 30 Minutes
