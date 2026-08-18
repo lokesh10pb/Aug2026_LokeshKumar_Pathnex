@@ -1,0 +1,85 @@
+17_August_Day_17_DevOps_Study_Log.txt
+
+
+# 17 August - Day 17
+
+
+Revised the important DevOps concepts studied previously.
+
+Revised the basic concepts of Linux, Git, GitHub, Docker, Jenkins, CI/CD and Kubernetes.
+
+Reviewed how different DevOps tools work together in a complete development and deployment workflow.
+
+Revised Linux commands and basic system administration concepts.
+
+Revised Git and GitHub concepts such as:
+
+* Git repositories
+* Branches
+* Commits
+* Push and pull
+* Merge
+* Version control workflow
+
+Revised Docker concepts such as:
+
+* Docker images
+* Docker containers
+* Dockerfile
+* Container lifecycle
+* Port mapping
+* Docker networks
+* Docker volumes
+
+Revised Jenkins and CI/CD concepts.
+
+Reviewed how Jenkins can be used to automate application build, testing and deployment.
+
+Revised the basic CI/CD flow:
+
+Developer -> Git/GitHub -> Jenkins -> Build -> Test -> Deploy
+
+Revised Kubernetes concepts covered in the previous class.
+
+Reviewed Pods, Deployments and Services.
+
+Revised how containers run inside Kubernetes Pods.
+
+Reviewed how applications are deployed inside a Kubernetes cluster.
+
+Revised Kubernetes commands such as:
+
+kubectl get pods
+kubectl get pods -o wide
+kubectl get deployments
+kubectl get services
+kubectl describe pod <pod-name>
+kubectl logs <pod-name>
+kubectl get events
+
+Revised Kubernetes LoadBalancer Services and how applications can be exposed outside the cluster.
+
+Reviewed the traffic flow:
+
+User -> Load Balancer -> Kubernetes Service -> Pod
+
+Revised Kubernetes Ingress and the role of an Ingress Controller.
+
+Reviewed the Ingress traffic flow:
+
+User -> Load Balancer -> Ingress Controller -> Ingress Rules -> Service -> Pod
+
+Revised how Deployments, Pods and Services work together.
+
+Reviewed the complete application deployment flow.
+
+Practiced speaking and explaining the DevOps concepts covered during previous classes.
+
+Revised the overall DevOps workflow and how Linux, Git, Docker, Jenkins and Kubernetes are connected.
+
+
+++++++++++++++++
+Speaking Practice - 60 Minutes
+
+
+## Total Study Time: 5 Hours

@@ -1,0 +1,137 @@
+## Asible 
+- name: Configure Auto-healing  for web Server
+  hosts: all 
+  become: yes
+  tasks: 
+   - name: Ensure nginx service is running
+     service: 
+        name: nginx
+        state: started
+        enabled: yes
+  - name: Setup auto-restart for nginx service
+    lineinfile:
+       path: /etc/systemd/system/nginx.service.d/override.conf
+       line: restart=always
+       create: yes
+
+#Terraform
+
+resource "aws_vpc" "main" {
+  cidr_block = "10.0.0.0/16"
+}
+
+# Azure VNet
+resource "azurerm_virtual_network" "main" {
+  name                = "pathnex-vnet"
+  location            = "East US"
+  address_space       = ["10.0.0.0/16"]
+  resource_group_name = azurerm_resource_group.main.name
+}
+
+
+
+resource " aws_instance" "pathnex_ec2"{
+    ami = "ami-0abcd1234abcd1234"
+      instance_type = "t2.micro"
+      region        = "us-east-1"
+
+}
+
+#Kubernetes
+apiVersion : app/v1
+kind: Deployment
+metadata: pathnex-web-app
+spec:
+   replicas: 3
+   selector:
+      matchLabels:
+   template:
+      metadata:
+         labels:
+             app: path-web-app
+      spec:
+      - name: nginx
+        image: nginx
+        port:
+          - containerPort: 80
+        livenessProbe:
+          httpGet:
+             path: /healthz
+             port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 10
+pipeline {
+    agent any
+    environment {
+        IMAGE_NAME = 'pathnex-web-app'
+    }
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building Docker image...'
+                docker.build("${env.IMAGE_NAME}")
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+            }
+        }
+        stage('Deploy to Kubernetes') {
+            steps {
+                script {
+                    sh 'kubectl apply -f kubernetes/deployment.yaml'
+                    sh 'kubectl rollout status deployment/pathnex-web-app'
+                }
+            }
+        }
+    }
+}
+
+
+GitLab
+stages:
+  - build
+  - push
+  - deploy
+
+build:
+  stage: build
+  script:
+    - docker build -t pathnex-web-app .
+
+push:
+  stage: push
+  script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD"
+    - docker push pathnex-web-app
+
+deploy_aws:
+  stage: deploy
+  script:
+    - kubectl --context=aws-cluster apply -f kubernetes/deployment.yaml
+
+
+
+
+deploy_azure:
+  stage: deploy
+  script:
+    - kubectl --context=azure-cluster apply -f kubernetes/deployment.yaml
+ 
+
+
+ # MySQL Container (Note - Here " \" means to be continue - it can be written in a single line")
+docker run -d \
+--name pathnex-mysql \
+-e MYSQL_ROOT_PASSWORD=root \
+mysql:8
+
+# Real Path
+/var/lib/mysql
