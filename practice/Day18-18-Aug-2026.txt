@@ -1,0 +1,127 @@
+#Asible 
+- name: Setup haproxy load_balancer
+  hosts: all 
+  become: yes
+  tasks:
+- name: Install haproxy
+  service:
+     yum: haproxy
+     state: present
+- name: Configure haproxy
+     src: haproxy.cfg.j2
+     dest: /etc/haproxy/haproxy.cfg
+- name: Start HAProxy service
+  service:
+     name: haproxy
+     state: present
+     enabled: yes
+
+# Terraform 
+resource "aws_lb" "pathnex-lb"{
+    name: = "pathnex-lb"
+    internal = "false"
+    load_balancer = "application"
+    security_groups =  = [aws_security_group.allow_ssh_http.id]
+    subnets =  = [aws_security_group.allow_ssh_http.id]
+}
+  
+resource "aws_autoscaling_group" "pathnex_asg"{
+    desired_capacity: 3
+    max_size = 5
+    min_size = 2
+    vpc_zone_identifier = aws_subnet.public.id, aws_subnet.public2.id]
+    launch_configuration = aws_launch_configuration.pathnex_config.id
+}
+#Kubernetes
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pathnex-web-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: pathnex-web-app
+  template:
+    metadata:
+      labels:
+        app: pathnex-web-app
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+          ports:
+            - containerPort: 80
+
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: pathnex-web-app-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: pathnex-web-app
+  minReplicas: 2
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 80
+
+
+  pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building Docker image...'
+                docker.build('pathnex-web-app')
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+            }
+        }
+        stage('Blue-Green Deployment') {
+            steps {
+                script {
+                    sh 'kubectl apply -f kubernetes/blue-deployment.yaml'
+                    sh 'kubectl apply -f kubernetes/green-deployment.yaml'
+                    sh 'kubectl rollout status deployment/blue-deployment'
+                    sh 'kubectl rollout status deployment/green-deployment'
+                }
+            }
+        }
+    }
+}
+
+stages:
+  - build
+  - push
+  - deploy
+
+build:
+  stage: build
+  script:
+    - docker build -t pathnex-web-app .
+
+push:
+  stage: push
+  script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD"
+    - docker push pathnex-web-app
+
+
+deploy:
+  stage: deploy
+  script:
+    - kubectl apply -f kubernetes/blue-deployment.yaml
+    - kubectl apply -f kubernetes/green-deployment.yaml
+    - kubectl rollout status deployment/blue-deployment
+    - kubectl rollout status deployment/green-deployment
+
+
+# Redis Container
+docker run -d --name pathnex-redis redis
+
+# Real Path
+/data
