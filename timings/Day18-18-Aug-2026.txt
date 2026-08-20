@@ -1,0 +1,61 @@
+# 18 August - Day 18
+
+## Kubernetes Live Class - Helm - 3 Hours
+
+Attended the Kubernetes live class.
+
+Learned the basics of **Helm** and why it is used in Kubernetes.
+
+Studied:
+
+* Helm Charts
+* Releases
+* `Chart.yaml`
+* `values.yaml`
+* Templates
+
+Practiced basic Helm commands:
+
+```bash
+helm create <chart-name>
+helm install <release-name> <chart>
+helm list
+helm upgrade <release-name> <chart>
+helm uninstall <release-name>
+```
+
+Understood how Helm simplifies Kubernetes application deployment.
+
+---
+
+## Helm Practice - 2.5 Hours
+
+Practiced creating and deploying a Helm Chart.
+
+Modified `values.yaml` and Kubernetes templates.
+
+Installed, upgraded and uninstalled Helm releases.
+
+Checked resources using:
+
+```bash
+kubectl get pods
+kubectl get deployments
+kubectl get services
+```
+
+Revised the flow:
+
+**Helm Chart -> Kubernetes Resources -> Pods -> Service**
+
+---
+
+## English Speaking Practice - 45 Minutes
+
+Practiced speaking English for 45 minutes.
+
+Explained Kubernetes and Helm concepts in my own words.
+
+Focused on pronunciation, sentence formation and speaking confidence.
+
+## Total Study Time: 6 Hours 15 Minutes
