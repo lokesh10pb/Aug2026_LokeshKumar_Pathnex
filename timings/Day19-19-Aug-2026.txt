@@ -1,0 +1,25 @@
+# 19 August - Day 19
+
+Attended a 3-hour Argo CD class.
+
+Learned and revised the basic concepts of Argo CD and GitOps.
+
+Reviewed how Argo CD connects Git repositories with Kubernetes for application deployment.
+
+Practiced the Argo CD concepts covered in class for 2 hours.
+
+Revised the basic Argo CD workflow:
+
+Developer -> Git/GitHub -> Argo CD -> Kubernetes -> Application
+
+Practiced basic Argo CD commands and application deployment steps.
+
+Reviewed how Argo CD detects changes from Git and syncs them with the Kubernetes cluster.
+
+Practiced explaining the Argo CD workflow and concepts in my own words.
+
+++++++++++++++++
+
+Speaking Practice - 45 Minutes
+
+## Total Study Time: 5 Hours 45 Minutes
