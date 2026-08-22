@@ -1,0 +1,98 @@
+- name: Configure Firewall with iptables
+  hosts: all
+  become: yes
+  tasks:
+    - name: Set default policies to drop all traffic
+      command: iptables -P INPUT DROP
+    - name: Allow SSH and HTTP traffic
+      command: iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+      command: iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+    - name: Save iptables configuration
+      command: service iptables save
+
+
+
+
+      resource "aws_security_group" "pathnex_sg{
+        name_prefix = "pathnex-sg"
+        description = "Allow SHH and HTTP"
+      }
+
+
+      ingress{
+        from_port = 22 
+        to_port 22 
+        protocol = "tcp"
+        cidr_blocks = ["0.0.0."]
+      }
+
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: pathnex-cluster-admin
+subjects:
+  - kind: User
+    name: pathnex-user
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin
+  apiGroup: rbac.authorization.k8s.io
+
+
+
+  pipeline {
+    agent any
+    environment {
+        REGISTRY_PASSWORD = credentials('docker-registry-password')
+    }
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building Docker image...'
+                docker.build('pathnex-web-app')
+            }
+        }
+        stage('Push') {
+            steps {
+                script {
+                    docker.withRegistry('https://docker.io', 'docker-credentials') {
+                        docker.image('pathnex-web-app').push('latest')
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+stages:
+  - build
+  - push
+  - deploy
+
+build:
+  stage: build
+  script:
+    - docker build -t pathnex-web-app .
+
+push:
+  stage: push
+  script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD"
+    - docker push pathnex-web-app
+
+
+deploy:
+  stage: deploy
+  script:
+    - kubectl apply -f kubernetes/deployment.yaml
+    - kubectl get pods --watch
+
+
+
+# Docker Networking
+docker network create pathnex-network
+docker run -dit --name c1 --network pathnex-network ubuntu
+docker run -dit --name c2 --network pathnex-network ubuntu
