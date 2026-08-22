@@ -1,0 +1,58 @@
+#20 August - Day 20
+
+## Kubernetes Live Class - 3 Hours
+
+Attended the Kubernetes live class.
+Revised the basic Kubernetes architecture and important components.
+Revised the concepts of Pods, Deployments and Services.
+Learned more about Pods and how containers run inside Pods.
+Practiced checking Pods and their status using kubectl.
+
+
+```bash
+kubectl get pods
+kubectl get pods -o wide
+kubectl get deployments
+kubectl get services
+kubectl describe pod
+kubectl logs <pod-name>
+```
+
+
+## Kubernetes Revision & Hands-On Practice - 2 Hours
+Revised the topics covered in the Kubernetes live class.
+Practiced deploying the mini application again by myself.
+Created and checked Pods.
+Created a Deployment for the application.
+Created a Service and connected it to the application Pods.
+Checked the application resources using kubectl.
+Practiced troubleshooting Pods using:
+
+```bash
+kubectl get pods
+kubectl describe pod <pod-name>
+kubectl logs <pod-name>
+kubectl get events
+```
+
+Revised Pod concepts such as:
+
+* Pod lifecycle
+* Pod status
+* Pod IP address
+* Containers inside a Pod
+* Pod restart behavior
+* Communication between Pods and Services
+
+Studied Kubernetes LoadBalancer Service in more detail.
+Revised how external traffic reaches an application running inside Kubernetes.
+Studied Ingress and understood the role of an Ingress Controller.
+Learned how Ingress rules can route traffic based on paths.
+
+
+**Deployment -> Pod -> Service -> Load Balancer -> User**
+**User -> Load Balancer -> Ingress Controller -> Ingress -> Service -> Pod**
+Practiced checking the deployed application and troubleshooting Kubernetes resources.
+Revised the Kubernetes concepts studied during the live class.
+
+## Total Study Time: 5 Hours
