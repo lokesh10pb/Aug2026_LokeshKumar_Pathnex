@@ -1,0 +1,34 @@
+# 22 August - Day 22
+
+## Ansible Online Live Class - 3 Hours
+
+Attended the Ansible online live class.
+Learned the basic concepts of Ansible and configuration management.
+Learned about Control Node, Managed Nodes, Inventory, Modules, and Playbooks.
+Understood how Ansible connects to remote servers using SSH.
+Practiced basic Ansible commands.
+
+## Ansible Revision & Practice - 2 Hours
+
+Revised the concepts covered in the live class.
+Practiced Ansible using a Control Node and Managed Node.
+Created an Inventory file and tested connectivity.
+Practiced basic ad-hoc commands and Playbooks.
+
+Revised:
+
+* Control Node and Managed Nodes
+* Inventory
+* SSH connectivity
+* Ansible Modules
+* Ad-hoc commands
+* YAML
+* Playbooks
+
+## English Speaking Practice - 30 Minutes
+
+Practiced English speaking for 30 minutes.
+Focused on speaking fluently and improving sentence formation.
+Practiced speaking about daily activities and technical topics.
+
+## Total Study Time: 5 Hours 30 Minutes
