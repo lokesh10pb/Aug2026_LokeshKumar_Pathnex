@@ -1,0 +1,57 @@
+# 21 August - Day 21
+
+## Kubernetes Live Class - 3 Hours
+
+Attended the Kubernetes live class.
+Revised the basic Kubernetes architecture and important components.
+Revised the concepts of Pods, Deployments, Services, LoadBalancers, and Ingress.
+Learned more about how Pods communicate with Services and how traffic reaches applications running inside Kubernetes.
+Practiced checking Kubernetes resources using kubectl.
+
+## Kubernetes Revision & Hands-On Practice - 2 Hours
+
+Revised the same Kubernetes concepts covered during the live class.
+Practiced deploying the mini application again by myself.
+Created and checked Pods.
+Created a Deployment and verified the running Pods.
+Created a Service and connected it to the application Pods.
+Practiced checking and troubleshooting Kubernetes resources.
+
+```bash
+kubectl get pods
+kubectl get deployments
+kubectl get services
+kubectl describe pod <pod-name>
+kubectl logs <pod-name>
+kubectl get events
+```
+
+Revised Kubernetes concepts such as:
+
+* Pod lifecycle
+* Pod status and restart behavior
+* Pod IP addresses
+* Containers inside Pods
+* Deployments and ReplicaSets
+* Services and Pod communication
+* LoadBalancer Service
+* Ingress and Ingress Controller
+* Traffic routing inside Kubernetes
+
+Revised how external traffic reaches an application:
+
+**Deployment -> Pod -> Service -> Load Balancer -> User**
+
+**User -> Load Balancer -> Ingress Controller -> Ingress -> Service -> Pod**
+
+Practiced troubleshooting Pods and Services and checking the deployed application.
+
+## English Speaking Practice - 1 Hour
+
+Practiced English speaking for 1 hour.
+Focused on improving fluency and speaking confidently.
+Practiced speaking about daily activities, technical work, and Kubernetes concepts.
+Practiced explaining Kubernetes concepts such as Pods, Deployments, and Services in simple English.
+Focused on sentence formation, pronunciation, and speaking continuously without long pauses.
+
+## Total Study Time: 6 Hours
