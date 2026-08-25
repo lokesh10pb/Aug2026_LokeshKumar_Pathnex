@@ -1,0 +1,20 @@
+# 25 August - Day 25
+
+## Prometheus & Grafana Live Session - 3 Hours
+
+Attended the live session on Prometheus and Grafana.
+Learned the basics of monitoring, metrics collection, and visualization.
+Practiced understanding how Prometheus collects metrics and how Grafana displays them using dashboards.
+
+## Prometheus & Grafana Revision - 2 Hours
+
+Revised the concepts covered in the live session.
+Reviewed Prometheus and Grafana basics and the monitoring workflow.
+Practiced the important concepts covered during the session.
+
+## English Speaking Practice - 30 Minutes
+
+Practiced English speaking for 30 minutes.
+Focused on fluency, sentence formation, and confidence.
+
+## Total Study Time: 5 Hours 30 Minutes
