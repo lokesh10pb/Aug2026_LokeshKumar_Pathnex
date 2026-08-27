@@ -1,0 +1,20 @@
+# 26 August - Day 26
+
+## ELK Stack Live Session - 3 Hours
+
+Attended the live session on the ELK Stack.
+Learned the basics of Elasticsearch, Logstash, and Kibana.
+Understood how the ELK Stack is used for collecting, processing, storing, and visualizing logs.
+
+## ELK Stack Revision - 2 Hours
+
+Revised the concepts covered in the live session.
+Reviewed Elasticsearch, Logstash, and Kibana basics.
+Practiced the important ELK Stack concepts and logging workflow.
+
+## English Speaking Practice - 30 Minutes
+
+Practiced English speaking for 30 minutes.
+Focused on fluency, sentence formation, and confidence.
+
+## Total Study Time: 5 Hours 30 Minutes
