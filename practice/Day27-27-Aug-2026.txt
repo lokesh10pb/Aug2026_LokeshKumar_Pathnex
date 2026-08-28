@@ -1,0 +1,61 @@
+#Ansible
+- name: Deploy Serverless Lamda function
+  hosts: localhost
+  tasks:
+    - name: Create a lambda function
+      command: aws lambda create-function --function-name pathnex-lambda --runtime nodejs14.x --role arn:aws:iam::123456789012:role/lambda-role --handler index.handler --zip-file fileb://lambda.zip
+#Terraform
+resource "aws_dynamodb_table" "pathnex-table"{
+    name = "pathnex_table"
+    hash_key = "key"
+    billing_mode = "PAY_PER_REQUEST"
+    attribute {
+        name = "id"
+        type = "S"
+    }
+}
+
+
+#Kubernetes
+apiVersion : Kubeless.io/v1beta1
+kind: Function
+metadata:
+   name: pathnex-lambda
+   namespace: default
+   spec:
+   runtime: nodejs14
+   handler: index.handler
+   function: | 
+        module.exports = function(event, context) {
+      context.succeed('Hello World');
+    };
+
+
+
+#Jenkinsfile
+
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building Lambda function package...'
+                sh 'zip -r lambda.zip lambda/'
+            }
+        }
+        stage('Deploy to Lambda') {
+            steps {
+                script {
+                    sh 'aws lambda update-function-code --function-name pathnex-lambda --zip-file fileb://lambda.zip'
+                }
+            }
+        }
+    }
+}
+
+# Docker Exec & Resource Limits
+docker exec -it pathnex-nginx bash
+docker stats
+
+# Bash
+docker run -d --memory="512m" --cpus="1.0" nginxs

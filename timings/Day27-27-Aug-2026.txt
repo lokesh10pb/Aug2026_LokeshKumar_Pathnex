@@ -1,0 +1,20 @@
+# 27 August - Day 27
+
+## Apache Kafka Live Session - 3 Hours
+
+Attended the live session on Apache Kafka.
+Learned the basics of Kafka, Topics, Producers, Consumers, and Brokers.
+Understood how Kafka is used for real-time data streaming and message processing.
+
+## Apache Kafka Practice & Revision - 2 Hours
+
+Revised the concepts covered in the live session.
+Practiced the same Apache Kafka concepts from the session.
+Reviewed the basic Kafka workflow and important components.
+
+## English Speaking Practice - 30 Minutes
+
+Practiced English speaking for 30 minutes.
+Focused on fluency, sentence formation, and confidence.
+
+## Total Study Time: 5 Hours 30 Minutes
