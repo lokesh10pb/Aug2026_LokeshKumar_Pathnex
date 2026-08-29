@@ -1,0 +1,21 @@
+
+# 28 August - Day 28
+
+## SSL/TLS Live Session - 2 Hours
+
+Attended the live session on SSL/TLS.
+Learned the basics of SSL certificates, TLS, HTTPS, and secure communication.
+Understood how SSL/TLS helps secure data between clients and servers.
+
+## SSL/TLS Practice & Revision - 2 Hours
+
+Revised the concepts covered in the live session.
+Practiced SSL/TLS concepts and certificate configuration.
+Reviewed the SSL/TLS workflow and important concepts.
+
+## English Speaking Practice - 30 Minutes
+
+Practiced English speaking for 30 minutes.
+Focused on fluency, sentence formation, and confidence.
+
+## Total Study Time: 4 Hours 30 Minutes
