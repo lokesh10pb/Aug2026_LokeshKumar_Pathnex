@@ -1,0 +1,21 @@
+# 29 August - Day 29
+
+## SRE Live Session - 2 Hours
+
+Attended the live session on Site Reliability Engineering (SRE).
+Learned the basics of SRE and its role in maintaining reliable and scalable systems.
+Understood key SRE concepts and how SRE practices help improve system reliability and availability.
+
+## Terraform Project – Remote State & State Locking - 2 Hours
+
+Created a Terraform project and configured a remote backend using Amazon S3.
+Configured Terraform to store the state file remotely in an S3 bucket.
+Implemented remote state locking to prevent multiple users or processes from modifying the Terraform state at the same time.
+Practiced Terraform backend configuration and understood the importance of secure and centralized state management.
+
+## English Speaking Practice - 30 Minutes
+
+Practiced English speaking for 30 minutes.
+Focused on improving fluency, sentence formation, pronunciation, and confidence while speaking.
+
+## Total Study Time: 4 Hours 30 Minutes
